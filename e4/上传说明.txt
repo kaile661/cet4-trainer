@@ -1,0 +1,19 @@
+把本目录里的东西整体传到下面任意一个地方，然后在 App 里填对应地址：
+
+【方案 A：GitHub Pages（推荐，免费、稳定）】
+  1. 在 GitHub 新建仓库（比如 cet4-app），把本目录所有文件传上去（可以用网页上传）；
+  2. 仓库 Settings → Pages → Source 选 “Deploy from a branch” → 分支 main / 目录 (root) → Save；
+  3. 等 1 分钟，地址就是：https://你的用户名.github.io/cet4-app/
+  4. App 里「设置 → 远程更新 → 服务器地址」填上面这个地址（结尾的斜杠可有可无）。
+
+【方案 B：jsDelivr（不用开 Pages，走 CDN，国内一般更快）】
+  仓库传上去之后地址是：
+    https://cdn.jsdelivr.net/gh/你的用户名/cet4-app@main/
+  注意 jsDelivr 有缓存，更新后可能要等几分钟到十几分钟才生效。
+
+【方案 C：自己的服务器 / 对象存储】
+  把 version.json、app.html、data/、apk/ 放到同一个目录下，
+  地址填那个目录的 URL（要能直接访问 version.json，且允许跨域读取）。
+
+以后每次发版：改完代码 → node build_mobile.js → node publish.js → 把 dist-remote 里的文件重新传一遍。
+只改内容（页面/题库）就只传 app.html 和 version.json（题库变了再加上 data/），不用重新打 APK。

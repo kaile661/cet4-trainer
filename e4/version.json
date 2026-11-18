@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "updatedAt": "2026-11-08T14:24:08.692Z",
+  "notes": "",
+  "minAppVersionCode": 8,
+  "app": {
+    "versionCode": 8,
+    "versionName": "1.7",
+    "apkUrl": "apk/app-release.apk",
+    "apkSize": 4209724,
+    "apkSha256": "89edda7111eb7ba91a35035f4ca235a67457969e060c52017cdfa372d8bb5856",
+    "note": ""
+  },
+  "content": {
+    "version": 202611082224,
+    "url": "app.html",
+    "sha256": "da4ff98da88cf8244a90596d56134a4137cbda8ff79c5e95c7e55f2d07f86dcc",
+    "size": 2434418,
+    "note": ""
+  },
+  "data": {
+    "cet4:words": {
+      "version": 202611082224,
+      "url": "data/words.json",
+      "sha256": "31a2b700cc92682b5fd475545746a65644548d22cf905f13134c96a79ff518fa",
+      "size": 235764
+    },
+    "cet4:sentences": {
+      "version": 202611082224,
+      "url": "data/sentences.json",
+      "sha256": "4a67fd8a3beaaa1b24d9d4fa4314e29ebc8e9a23c030dd71051b349f5b76ee3b",
+      "size": 972615
+    },
+    "junior:words": {
+      "version": 202611082224,
+      "url": "data/junior_words.json",
+      "sha256": "cfc13407ee69a0e3e4d8e45edd40ad53dacd7e3e9daaec9e313e721ebc977f1c",
+      "size": 219830
+    },
+    "junior:sentences": {
+      "version": 202611082224,
+      "url": "data/junior_sentences.json",
+      "sha256": "c325c2048597445861ec12c6199dba30621614d34b19f9e5cc304ca1ef186713",
+      "size": 822302
+    }
+  }
+}
